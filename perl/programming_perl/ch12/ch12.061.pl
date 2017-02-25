@@ -1,0 +1,1 @@
+eval { $formobj->can( $method ) }

@@ -1,0 +1,1 @@
+/Gandalf/ || /Saruman/ || /Radagast/

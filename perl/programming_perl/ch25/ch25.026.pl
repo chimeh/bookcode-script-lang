@@ -1,0 +1,1 @@
+$rev = $+   if /Version: (.*)|Revision: (.*)/;

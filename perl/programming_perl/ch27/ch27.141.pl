@@ -1,0 +1,3 @@
+getpwent
+setpwent
+endpwent

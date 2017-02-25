@@ -1,0 +1,2 @@
+undef $x;
+untie $fred;

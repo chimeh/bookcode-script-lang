@@ -1,0 +1,1 @@
+$sword->name($oldname || "Glamdring");

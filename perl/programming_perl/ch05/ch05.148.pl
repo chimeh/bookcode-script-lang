@@ -1,0 +1,2 @@
+$var = '\U';
+/${var}frodo/;

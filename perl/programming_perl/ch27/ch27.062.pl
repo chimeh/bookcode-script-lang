@@ -1,0 +1,1 @@
+delete @hash{keys %hash};

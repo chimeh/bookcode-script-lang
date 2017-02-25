@@ -1,0 +1,2 @@
+$refrefref = \\\"howdy";
+print ${${${$refrefref}}};

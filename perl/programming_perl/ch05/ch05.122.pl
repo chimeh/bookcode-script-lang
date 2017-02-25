@@ -1,0 +1,1 @@
+/Harry (?i:s) Truman/

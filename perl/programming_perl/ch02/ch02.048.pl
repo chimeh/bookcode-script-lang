@@ -1,0 +1,5 @@
+@releases = (
+    "alpha",
+    "beta",
+    "gamma",
+);

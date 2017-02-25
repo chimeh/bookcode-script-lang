@@ -1,0 +1,1 @@
+return bless $mess => $class;

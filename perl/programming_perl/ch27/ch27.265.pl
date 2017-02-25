@@ -1,0 +1,5 @@
+q/STRING/
+qq/STRING/
+qr/STRING/
+qw/STRING/
+qx/STRING/

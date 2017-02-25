@@ -1,0 +1,16 @@
+(?(DEFINE)
+    (?<greeklish>            [\p{Greek}\p{Inherited}]   )
+    (?<ungreeklish>          [^\p{Greek}\p{Inherited}]  )
+    (?<greek_boundary>
+        (?(?<=      (?&greeklish))
+              (?!   (?&greeklish))
+          |   (?=   (?&greeklish))
+        )
+    )
+    (?<greek_nonboundary>
+        (?(?<=      (?&greeklish))
+              (?=   (?&greeklish))
+          |   (?!   (?&greeklish))
+        )
+    )
+)

@@ -1,0 +1,1 @@
+my $untainted = $tainted =~ m/(.*)/;

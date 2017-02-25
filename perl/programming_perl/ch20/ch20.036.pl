@@ -1,0 +1,1 @@
+$virtname = "=&" . fileno(TMP);

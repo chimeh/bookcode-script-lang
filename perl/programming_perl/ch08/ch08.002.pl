@@ -1,0 +1,1 @@
+@vitals = ("john", "mary", "bill");

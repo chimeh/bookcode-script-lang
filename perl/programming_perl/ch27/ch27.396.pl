@@ -1,0 +1,1 @@
+ucfirst lc $word

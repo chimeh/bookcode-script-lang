@@ -1,0 +1,1 @@
+my($nextvar) = scalar <STDIN>;

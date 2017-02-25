@@ -1,0 +1,1 @@
+@haslen = grep { length } @random;

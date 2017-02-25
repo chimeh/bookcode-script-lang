@@ -1,0 +1,1 @@
+chomp($answer = <STDIN>);

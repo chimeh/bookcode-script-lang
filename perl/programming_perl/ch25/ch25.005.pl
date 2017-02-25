@@ -1,0 +1,7 @@
+_ # (underline)
+ARGV
+ARGVOUT
+DATA
+STDIN
+STDOUT
+STDERR

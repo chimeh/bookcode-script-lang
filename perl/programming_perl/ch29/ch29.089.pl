@@ -1,0 +1,1 @@
+local our $law = "martial";

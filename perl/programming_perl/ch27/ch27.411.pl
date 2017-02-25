@@ -1,0 +1,13 @@
+use autouse "Carp" => qw(carp croak);
+use bignum;
+use constant PI => 4 * atan2(1,1);
+use diagnostics;
+use integer;
+use lib "/opt/projects/spectre/lib";
+use locale;
+use sigtrap qw(die INT QUIT);
+use sort qw(stable _quicksort _mergesort);
+use strict  qw(subs vars refs);
+use threads;
+use warnings qw(numeric uninitialized);
+use warnings qw(FATAL all);

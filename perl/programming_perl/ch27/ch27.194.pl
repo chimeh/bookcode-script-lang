@@ -1,0 +1,1 @@
+@words = map { split " " } @lines;

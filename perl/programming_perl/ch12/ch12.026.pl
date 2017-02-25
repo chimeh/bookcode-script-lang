@@ -1,0 +1,1 @@
+$pet = Critter->spawn;

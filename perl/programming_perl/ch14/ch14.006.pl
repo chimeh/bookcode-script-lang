@@ -1,0 +1,1 @@
+$dromedary = (tied $camel)->FETCH():

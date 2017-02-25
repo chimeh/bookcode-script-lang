@@ -1,0 +1,3 @@
+sub pups : locked method {
+    ...
+}

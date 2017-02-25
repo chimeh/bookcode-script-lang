@@ -1,0 +1,1 @@
+husband=fred friend=barney

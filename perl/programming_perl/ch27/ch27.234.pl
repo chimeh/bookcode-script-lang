@@ -1,0 +1,1 @@
+somefunction("&main::LOGFILE");

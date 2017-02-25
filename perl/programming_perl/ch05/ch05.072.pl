@@ -1,0 +1,2 @@
+ſ  U+017F GC=Ll SC=Latin        LATIN SMALL LETTER LONG S
+K  U+212A GC=Lu SC=Latin        KELVIN SIGN

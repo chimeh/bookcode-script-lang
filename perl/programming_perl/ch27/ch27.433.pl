@@ -1,0 +1,1 @@
+$~ = "OtherPack::NEWNAME";

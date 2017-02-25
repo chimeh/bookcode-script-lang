@@ -1,0 +1,1 @@
+*SomePack::dick = \&OtherPack::richard;

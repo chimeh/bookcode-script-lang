@@ -1,0 +1,1 @@
+print if /$pattern/o;

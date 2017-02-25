@@ -1,0 +1,1 @@
+binmode FILEHANDLE, ":raw";

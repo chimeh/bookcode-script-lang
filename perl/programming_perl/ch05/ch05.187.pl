@@ -1,0 +1,2 @@
+s/PATTERN/CODE/ee
+s/PATTERN/eval(CODE)/e

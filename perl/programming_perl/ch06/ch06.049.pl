@@ -1,0 +1,24 @@
+$Collator = Unicode::Collate->new(
+   UCA_Version => $UCA_Version,
+   alternate => $alternate, # alias for 'variable'
+   backwards => $levelNumber, # or \@levelNumbers
+   entry => $element,
+   hangul_terminator => $term_primary_weight,
+   ignoreName => qr/$ignoreName/,
+   ignoreChar => qr/$ignoreChar/,
+   ignore_level2 => $bool,
+   katakana_before_hiragana => $bool,
+   level => $collationLevel,
+   normalization  => $normalization_form,
+   overrideCJK => \&overrideCJK,
+   overrideHangul => \&overrideHangul,
+   preprocess => \&preprocess,
+   rearrange => \@charList,
+   rewrite => \&rewrite,
+   suppress => \@charList,
+   table => $filename,
+   undefName => qr/$undefName/,
+   undefChar => qr/$undefChar/,
+   upper_before_lower => $bool,
+   variable => $variable,
+);

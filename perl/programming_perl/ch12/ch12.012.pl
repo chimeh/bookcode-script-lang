@@ -1,0 +1,1 @@
+$mage->speak("friend" && enter());

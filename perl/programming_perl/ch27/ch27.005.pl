@@ -1,0 +1,1 @@
+$diff = abs($first - $second);

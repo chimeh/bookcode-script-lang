@@ -1,0 +1,1 @@
+@allfiles = grep !/^\./, readdir THISDIR;

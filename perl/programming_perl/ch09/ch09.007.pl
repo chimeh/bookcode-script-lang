@@ -1,0 +1,3 @@
+while (<>) {
+    push @AoA, [ split ];
+}

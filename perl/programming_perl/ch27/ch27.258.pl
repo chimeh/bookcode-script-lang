@@ -1,0 +1,1 @@
+print OUT scalar <STDIN>;

@@ -1,0 +1,2 @@
+$fh = \*STDIN;
+$line = <$fh>;

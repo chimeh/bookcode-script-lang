@@ -1,0 +1,3 @@
+#  0      1         2          3       4 ...
+($name, $aliases, $addrtype, $length, @addrs) =
+    gethostbyaddr($packed_binary_address, $addrtype);

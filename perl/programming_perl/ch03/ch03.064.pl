@@ -1,0 +1,1 @@
+my @alphabet = ("A" .. "Z");

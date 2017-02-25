@@ -1,0 +1,1 @@
+($tmp = $global) += $constant;

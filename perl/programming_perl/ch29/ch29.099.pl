@@ -1,0 +1,1 @@
+our($frobbed, @munge, %seen);
