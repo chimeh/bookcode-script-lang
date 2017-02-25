@@ -1,0 +1,31 @@
+#! /usr/bin/perl
+use 5.014;
+
+my $range = 100;
+
+my $secret = int( 1 + rand $range );
+
+while ( <> ) {
+  chomp;
+
+  given ( $_ ) {
+
+    when ( m/^(quit|exit)?$/i ) {
+      say "quitter!";
+      last;
+    }
+    when ( m/\D/ ) {
+      say "u wot m8?";
+    }
+    when ( $_ < $secret ) {
+      say "too low";
+    }
+    when ( $_ > $secret ) {
+      say "too high";
+    }
+    when ( $_ == $secret ) {
+      say "bang on!";
+      last;
+    }
+  }
+}

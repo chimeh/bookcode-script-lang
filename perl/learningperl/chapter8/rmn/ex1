@@ -1,0 +1,13 @@
+#! /usr/bin/perl
+
+use 5.014;
+
+while( <> ) {
+  chomp;
+  if( /match/ ) {
+    say "Matched : |$`<$&>$'|";
+  }
+  else {
+    say "No match: |$_|";
+  }
+}

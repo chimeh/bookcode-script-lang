@@ -1,0 +1,6 @@
+#! /usr/bin/perl
+
+use 5.014;
+
+print map { "'$_'\n" } grep { /\s\z/ } map { s/\n\Z//r } <>;
+

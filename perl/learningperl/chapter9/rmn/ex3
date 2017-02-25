@@ -1,0 +1,13 @@
+#! /usr/bin/perl
+use 5.014;
+
+open OUT, '>', "$ARGV[0].out";
+
+while( <> ) {
+  s/fred/FRED/ig;
+  s/wilma/Fred/ig;
+  s/FRED/Wilma/g;
+  print OUT;
+}
+
+close OUT;

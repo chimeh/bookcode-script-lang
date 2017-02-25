@@ -1,0 +1,16 @@
+#! /usr/bin/perl -w
+use 5.014;
+
+chomp( my @input = <STDIN> );
+
+say "Total is ", total( @input );
+
+sub total {
+  my $sum = 0;
+
+  foreach ( @_ ) {
+    $sum += $_;
+  }
+
+  return $sum;
+}

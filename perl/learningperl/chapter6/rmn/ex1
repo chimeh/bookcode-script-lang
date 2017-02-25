@@ -1,0 +1,16 @@
+#! /usr/bin/perl
+
+use 5.014;
+
+my %names = ( fred => 'flinstone',
+              barney => 'rubble',
+              wilma => 'flinstone',
+              );
+
+print "Enter name: ";
+
+chomp( my $first = <STDIN> );
+
+my $last = $names{$first} // 'unknown';
+
+say "${first}'s family name is $last";

@@ -1,0 +1,13 @@
+#! /usr/bin/perl
+
+use 5.014;
+
+while( <> ) {
+  chomp;
+  if( /(\w*a)\b/ ) {
+    say "Matched : |$`<$&>$'| captured '$1'";
+  }
+  else {
+    say "No match: |$_|";
+  }
+}

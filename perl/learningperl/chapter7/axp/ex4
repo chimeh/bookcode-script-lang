@@ -1,0 +1,11 @@
+#!/usr/bin/env perl
+
+use 5.012;
+use warnings;
+
+# Looking for a word that is capitalised but not all capitalised
+# Matches 'Fred', 'Alfred', 'WoW', 'BSoD' but not 'FRED', 'iPhone', 'I', or 'D&D'
+# Note we didn't actually cover word boundaries in chapter 7, but it's what you want, really
+# Doesn't work on the full unicode range; I'm not sure Perl's unicode support works properly
+print grep( /\b[A-Z]+[a-z][A-Za-z]*\b/, <> );
+

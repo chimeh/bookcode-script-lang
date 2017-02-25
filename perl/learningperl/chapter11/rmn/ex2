@@ -1,0 +1,19 @@
+#! /usr/bin/perl -w
+use 5.014;
+
+use DateTime;
+use Data::Dumper;
+use List::MoreUtils qw( zip );
+
+my @p = qw( year month day );
+
+my $then = DateTime->new( zip @p, @ARGV );
+my $now = DateTime->from_epoch( epoch => time );
+
+my $delta = $now - $then;
+
+printf "%s years %s months %s days\n", 
+        int( $delta->{months} / 12 ), 
+        $delta->{months} % 12, 
+        $delta->{days};
+

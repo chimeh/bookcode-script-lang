@@ -1,0 +1,16 @@
+#! /usr/bin/perl -w
+use 5.014;
+
+exit if @ARGV < 2;
+
+my $dest = pop @ARGV;
+
+if ( -d $dest ) {
+  link $_ => "$dest/$_" or warn $! foreach @ARGV;
+}
+elsif ( @ARGV == 1 ) {
+  link $ARGV[0] => $dest or warn $!;
+}
+else {
+  say "no";
+}

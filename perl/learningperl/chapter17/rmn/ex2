@@ -1,0 +1,10 @@
+#! /usr/bin/perl -w
+use 5.014;
+use List::Util qw( max );
+
+my $ml = max map { length } @ARGV;
+
+foreach my $file ( sort @ARGV ) {
+  my @times = ( stat $file )[ 9, 8 ];
+  printf "%-${ml}s %s %s\n", $file, @times;
+}

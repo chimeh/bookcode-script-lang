@@ -1,0 +1,16 @@
+#! /usr/bin/perl -w
+use 5.014;
+use List::Util qw( max );
+
+my $ml = max map { length } @ARGV;
+
+foreach my $file ( sort @ARGV ) {
+  my @times = map { format_date( $_ ) } ( stat $file )[ 9, 8 ];
+  printf "%-${ml}s %s %s\n", $file, @times;
+}
+
+sub format_date {
+  my ( $ts ) = @_;
+  my ( $y, $m, $d ) = ( localtime $ts )[ 5, 4, 3 ];
+  return sprintf "%s-%02d-%02d", $y + 1900, $m, $d;
+}

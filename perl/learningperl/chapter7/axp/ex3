@@ -1,0 +1,8 @@
+#!/usr/bin/env perl
+
+use 5.012;
+use warnings;
+
+# Looking for period characters
+print grep( /\./, <> );
+

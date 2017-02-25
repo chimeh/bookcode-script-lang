@@ -1,0 +1,20 @@
+#! /usr/bin/perl
+
+use 5.014;
+
+say "Enter words:";
+
+chomp( my @words = <STDIN> );
+
+my %freq = ();
+my $max_length = 0;
+
+foreach ( @words ) {
+  $freq{$_}++;
+  $max_length = length $_ > $max_length ? length $_ : $max_length;
+}
+
+say "Word frequency:";
+foreach ( sort keys %freq ) {
+  printf "%${max_length}s : %s\n", $_, $freq{$_};
+}

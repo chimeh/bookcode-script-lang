@@ -1,0 +1,4 @@
+#! /usr/bin/perl -w
+use 5.014;
+
+unlink or warn "$_ : $!" foreach @ARGV;

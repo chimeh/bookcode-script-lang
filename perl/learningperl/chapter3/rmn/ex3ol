@@ -1,0 +1,11 @@
+#! /usr/bin/perl
+
+use strict;
+use warnings;
+use utf8;
+use 5.010;
+
+# output on one line
+
+chomp( my @lines = <STDIN> );
+say join ' ', sort @lines;

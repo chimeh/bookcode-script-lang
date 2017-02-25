@@ -1,0 +1,14 @@
+#! /usr/bin/perl -w
+
+use 5.014;
+use List::Util qw( max );
+
+$ENV{undef} = undef;
+$ENV{empty} = '';
+$ENV{zero} = 0;
+
+my $max_length = max map { length } keys %ENV;
+
+foreach ( sort keys %ENV ) {
+  printf "%${max_length}s : %s\n", $_, $ENV{$_} // '(undefined value)';
+}

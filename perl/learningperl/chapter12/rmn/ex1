@@ -1,0 +1,17 @@
+#! /usr/bin/perl -w
+use 5.014;
+
+say "e r w x";
+
+say describe( $_ ) foreach @ARGV;
+
+sub describe {
+  my ( $file ) = @_;
+
+  unshift @_, -x $file;
+  unshift @_, -w _;
+  unshift @_, -r _;
+  unshift @_, -e _;
+
+  return join " ", map { $_ || 0 } @_;
+}

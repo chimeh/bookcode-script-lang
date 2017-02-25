@@ -1,0 +1,8 @@
+#!/usr/bin/env perl
+
+use 5.012;
+use warnings;
+
+# Looking for 'fred' or 'Fred'; matches 'frederick', 'Alfred' and 'Fred'
+print grep( /[Ff]red/, <> );
+

@@ -1,0 +1,30 @@
+#! /usr/bin/perl -w
+use 5.014;
+
+exit if @ARGV < 2;
+
+my $sym = $ARGV[0] eq '-s';
+shift if $sym;
+
+my $dest = pop @ARGV;
+
+if ( -d $dest ) {
+  makelink $_ => "$dest/$_" foreach @ARGV;
+}
+elsif ( @ARGV == 1 ) {
+  makelink $ARGV[0] => $dest;
+}
+else {
+  say "no";
+}
+
+sub makelink {
+  my ( $from, $to ) = @_;
+
+  if ( $sym ) {
+    symlink $from => $to or warn $!;
+  }
+  else {
+    link $from => $to or warn $!;
+  }
+}

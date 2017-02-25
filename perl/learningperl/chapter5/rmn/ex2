@@ -1,0 +1,14 @@
+#! /usr/bin/perl
+
+use 5.014;
+use autodie;
+
+chomp( my @input = <STDIN> );
+
+my @ruler = map { $_ % 10 } ( 1 .. 20 );
+
+say @ruler;
+
+foreach ( @input ) {
+  printf "%20s\n", $_;
+}

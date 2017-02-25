@@ -1,0 +1,26 @@
+#! /usr/bin/perl -w
+use 5.014;
+
+exit if !scalar @ARGV;
+
+# take a copy first, <> consumes @ARGV
+my @files = @ARGV;
+
+# build a set of files that are already copyrighted
+my %copyrighted;
+while ( <> ) {
+  $copyrighted{$ARGV} = 1 if m/\A## Copyright \(C\) 2014 by Ryan/
+}
+
+# reset ARGV to be the list of non-copyrighted input files
+@ARGV = grep { !$copyrighted{$_} } @files;
+
+exit if !scalar @ARGV;
+
+# add the copyright notices
+$^I = ".bak";
+while ( <> ) {
+  print;
+
+  say "## Copyright (C) 2014 by Ryan" if m/\A#!/;
+}

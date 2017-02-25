@@ -1,0 +1,12 @@
+#! /usr/bin/perl -w
+use 5.014;
+
+my %ln = qw(
+  fred flintstone
+  Wilma Flintstone
+  Barney Rubble
+  betty rubble
+  Bamm-Bamm Rubble
+  PEBBLES FLINTSTONE );
+
+say "$_ $ln{$_}" foreach sort { "\L$ln{$a}" cmp "\L$ln{$b}" or "\L$a" cmp "\L$b" } keys %ln;

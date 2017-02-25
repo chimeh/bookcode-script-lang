@@ -1,0 +1,26 @@
+#! /usr/bin/perl
+use 5.014;
+
+my $range = 100;
+
+my $secret = int( 1 + rand $range );
+
+while ( <> ) {
+  chomp;
+
+  given ( $_ ) {
+    when ( $_ % 3 == 0 ) {
+      print "Fizz";
+      continue;
+    }
+    when ( $_ % 5 == 0 ) {
+      print "Bin";
+      continue;
+    }
+    when ( $_ % 7 == 0 ) {
+      print "Sausage";
+    }
+  }
+
+  print "\n";
+}

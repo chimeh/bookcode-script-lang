@@ -1,0 +1,14 @@
+fred
+barney
+fred
+dino
+wilma
+fred
+barney
+wilma
+wilma
+wilma
+wilma
+barney
+dino
+barney

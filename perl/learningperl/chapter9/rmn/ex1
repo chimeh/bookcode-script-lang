@@ -1,0 +1,11 @@
+#! /usr/bin/perl
+use 5.014;
+
+my $what = 'a|b';
+
+while( <> ) {
+  chomp;
+  my @matches = m/($what)($what)($what)/g;
+
+  say "@matches" if scalar @matches >= 3;
+}

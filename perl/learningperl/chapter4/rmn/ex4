@@ -1,0 +1,19 @@
+#! /usr/bin/perl -w
+use 5.014;
+
+greet( "Fred" );
+greet( "Barney" );
+
+sub greet {
+  my ( $name ) = @_;
+  state $last;
+
+  if ( defined $last ) {
+    say "Hi $name! $last is also here!";
+  }
+  else {
+    say "Hi $name! You're the first one here!";
+  }
+
+  $last = $name;
+}

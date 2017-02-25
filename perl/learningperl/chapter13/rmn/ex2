@@ -1,0 +1,14 @@
+#! /usr/bin/perl -w
+use 5.014;
+
+print "Enter directory : ";
+chomp( my $dir = <STDIN> );
+
+if ( $dir =~ m/^\s*$/ ) {
+  chdir or die "ruh roh! $!";
+}
+else {
+  chdir $dir or die "ruh roh! $!";
+}
+
+say foreach sort glob '.* *';

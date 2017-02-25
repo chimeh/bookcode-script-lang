@@ -1,0 +1,14 @@
+#! /usr/bin/perl -W
+use 5.014;
+
+
+foreach ( @ARGV ) {
+
+  print "$_ is ";
+
+  when( -r ) { print "readable and "; continue }
+  when( -w ) { print "writable and "; continue }
+  when( -e ) { print "executable and "; continue }
+
+  print "mad as all hell.\n";
+}

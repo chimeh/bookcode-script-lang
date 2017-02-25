@@ -1,0 +1,7 @@
+#!/usr/bin/env perl
+
+use 5.012;
+use warnings;
+
+# Looking for both Fred and Wilma. That's ok, grep is flexible...
+print grep { /[Ff]red/ and /[Ww]ilma/ } <>;

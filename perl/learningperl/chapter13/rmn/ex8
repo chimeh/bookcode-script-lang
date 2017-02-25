@@ -1,0 +1,4 @@
+#! /usr/bin/perl -w
+use 5.014;
+
+say foreach map { $_ . ' -> ' . readlink $_ } grep { -l } glob '.* *';

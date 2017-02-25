@@ -1,0 +1,7 @@
+https://github.com/txr12/learningperl.git
+https://github.com/Apress/pro-perl-parsing.git
+https://github.com/Apress/pro-perl-debugging.git
+https://github.com/Apress/pro-perl.git
+https://github.com/Apress/beg-perl-web-dev.git
+https://github.com/Apress/real-world-sql-server-admin-w-perl.git
+

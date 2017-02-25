@@ -1,0 +1,7 @@
+#! /usr/bin/perl -w
+use 5.014;
+
+open STDOUT, '>', 'ls.out';
+open STDERR, '>', 'ls.err';
+
+system 'cd /usr/bin; ls -l';

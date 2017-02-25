@@ -1,0 +1,35 @@
+No match: |I met Fred Flintstone at the quarry.|
+No match: |FRED FLINTSTONE!!!!|
+No match: |Barney Rubble and Mr. Slate were there too|
+No match: |Alfred Hitchcock is my favourite director.|
+No match: |right said fred, both of us together|
+No match: |refried infrared inferred |
+Matched: |frederick q. fontesnue,  <a.k.a >lord snebworth|
+  <word> contains 'a'
+  <extra> contains '.k.a '
+No match: |do you play WoW?	 |
+Matched: |I got <a BSoD> last time I played it|
+  <word> contains 'a'
+  <extra> contains ' BSoD'
+No match: |and then it crashed my iPhone|
+No match: |I prefer D&D|
+No match: |Χόβερκραφτ μου είναι γεμάτο χέλια|
+Matched: |fred and <wilma flin>tstone|
+  <word> contains 'wilma'
+  <extra> contains ' flin'
+Matched: |<Wilma's bi>rth name was Wilma Slaghoople   |
+  <word> contains 'Wilma'
+  <extra> contains ''s bi'
+Matched: |<Wilma and >Fred went to get a Brontosaurus Burger|
+  <word> contains 'Wilma'
+  <extra> contains ' and '
+Matched: |<wilma>|
+  <word> contains 'wilma'
+  <extra> contains ''
+No match: |barney|
+Matched: |Mrs. <Wilma Flin>tstone|
+  <word> contains 'Wilma'
+  <extra> contains ' Flin'
+Matched: |<wilma&fred>|
+  <word> contains 'wilma'
+  <extra> contains '&fred'

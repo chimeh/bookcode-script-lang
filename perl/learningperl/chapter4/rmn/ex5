@@ -1,0 +1,21 @@
+#! /usr/bin/perl -w
+use 5.014;
+
+greet( "Fred" );
+greet( "Barney" );
+greet( "Wilma" );
+greet( "Betty" );
+
+sub greet {
+  my ( $name ) = @_;
+  state @seen;
+
+  if ( scalar @seen ) {
+    say "Hi $name! I've seen @seen";
+  }
+  else {
+    say "Hi $name! You're the first one here!";
+  }
+
+  push @seen, $name;
+}

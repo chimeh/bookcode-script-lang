@@ -1,0 +1,12 @@
+         Chapter
+         4    5    6    7    8    9    10   11   12   13   14   15   16   17
+Author   Reviewed by...
+axp      txr  rmn  mjm  jmt  txr  rmn  mjm  jmt  drjt txr  rmn  mjm  jmt  drjt
+jmt      axp  txr  rmn  mjm  axp  txr  rmn  mjm  axp  drjt txr  rmn  mjm  axp
+mjm      jmt  axp  txr  rmn  jmt  drjt txr  rmn  jmt  axp  drjt txr  rmn  jmt
+rmn      mjm  jmt  axp  txr  mjm  axp  drjt txr  mjm  jmt  axp  drjt txr  mjm
+txr      rmn  mjm  jmt  axp  rmn  jmt  axp  drjt rmn  mjm  jmt  axp  drjt rmn
+drjt      -    -    -    -    -   mjm  jmt  axp  txr  rmn  mjm  jmt  axp  txr
+
+         Meeting leader:
+         axp  rmn  mjm  jmt  txr  axp  rmn  mjm  jmt  txr  drjt axp  rmn  mjm

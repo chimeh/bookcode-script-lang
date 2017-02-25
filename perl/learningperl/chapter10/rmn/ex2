@@ -1,0 +1,31 @@
+#! /usr/bin/perl -w
+use 5.014;
+
+my $debug = '-d' eq ( shift // '' );
+my $range = 100;
+
+my $secret = int( 1 + rand $range );
+
+$debug && say "secret is $secret";
+
+my @reaction = ( 'bang on!', 'too high', 'too low' );
+
+while ( <> ) {
+  chomp;
+
+  if ( m/^(quit|exit)?$/i ) {
+    say "quitter!";
+    last;
+  }
+  elsif ( m/\D/ ) {
+    say "u wot m8?";
+    next;
+  }
+
+  my $d = $_ <=> $secret;
+
+  $debug && say "reaction index is $d";
+
+  say $reaction[ $d ];
+  last unless $d;
+}

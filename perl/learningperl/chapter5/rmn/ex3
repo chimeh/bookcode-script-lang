@@ -1,0 +1,14 @@
+#! /usr/bin/perl
+
+use 5.014;
+use autodie;
+
+chomp( my @input = <STDIN> );
+my $width = shift @input;
+
+my @ruler = map { $_ % 10 } ( 1 .. $width );
+
+say @ruler;
+foreach ( @input ) {
+  printf "%${width}s\n", $_;
+}

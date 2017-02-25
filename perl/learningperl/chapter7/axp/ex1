@@ -1,0 +1,7 @@
+#!/usr/bin/env perl
+
+use 5.012;
+use warnings;
+
+# Looking for 'fred'; matches 'frederick' and 'Alfred', but not 'Fred'
+print grep( /fred/, <> );

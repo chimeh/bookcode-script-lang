@@ -1,0 +1,21 @@
+#! /usr/bin/perl -w
+use 5.014;
+
+push @ARGV, "strings.txt" unless scalar @ARGV;
+
+chomp( my @strings = <> );
+
+while ( 1 ) {
+  print "Enter pattern : ";
+  chomp( my $pattern = <STDIN> );
+
+  exit unless length $pattern;
+
+  eval {
+    my $r = qr/$pattern/;
+    my @matches = grep /$r/, @strings;
+    say "$pattern matched " . scalar @matches . " strings : @matches";
+  };
+
+  print $@ if $@;
+}

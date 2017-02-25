@@ -1,0 +1,10 @@
+#! /usr/bin/perl -w
+use 5.014;
+
+$^I = ".bak";
+
+while ( <> ) {
+  print;
+
+  say "## Copyright (C) 2014 by Ryan" if m/\A#!/;
+}

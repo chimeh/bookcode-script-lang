@@ -1,0 +1,22 @@
+#! /usr/bin/perl -W
+use 5.014;
+
+my $n = $ARGV[0];
+
+given( $n ) {
+  when( undef ){ die "Supply a number"; }
+  when( /\D/ ){ die "Supply a NUMBER"; }
+}
+
+my @divisors = divisors( $n );
+
+given( scalar @divisors ) {
+  when( 0 ) { say "$n is prime"; }
+  default { say "$n is divisible by @divisors" };
+}
+
+sub divisors {
+  my ( $n ) = @_;
+
+  return grep { ( $n % $_ ) == 0 } ( 2 .. ( $n / 2 ) );
+}

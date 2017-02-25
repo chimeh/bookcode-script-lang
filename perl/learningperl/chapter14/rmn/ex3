@@ -1,0 +1,12 @@
+#! /usr/bin/perl -w
+use 5.014;
+
+my ( $sub, $string ) = @ARGV;
+
+my $i = index $string, $sub;
+while( $i >= 0 ){
+  say $i;
+  $i = index $string, $sub, $i+1;
+}
+
+

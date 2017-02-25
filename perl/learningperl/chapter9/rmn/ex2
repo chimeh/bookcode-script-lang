@@ -1,0 +1,11 @@
+#! /usr/bin/perl
+use 5.014;
+
+open OUT, '>', "$ARGV[0].out";
+
+while( <> ) {
+  s/fred/Larry/ig;
+  print OUT;
+}
+
+close OUT;

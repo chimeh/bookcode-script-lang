@@ -1,0 +1,13 @@
+#! /usr/bin/perl
+use warnings;
+use utf8;
+
+print "String: ";
+my $a = <STDIN>;
+
+print "Count: ";
+chomp( my $b = <STDIN> );
+
+chomp( my $result = $a x $b );
+
+print "$result\n";

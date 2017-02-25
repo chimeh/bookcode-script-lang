@@ -1,0 +1,28 @@
+#! /usr/bin/perl -w
+use 5.014;
+use Data::Dumper;
+
+say $$;
+
+my $seen = {};
+
+map { $SIG{$_} = \&handle } keys %SIG;
+
+$SIG{INT} = \&stop;
+
+my $stop = 0;
+
+while( !$stop ) {
+}
+
+sub handle {
+  my ( $sig ) = @_;
+
+  $seen->{$sig} //= 0;
+  say "Caught $sig, seen it $seen->{$sig} times before";
+  $seen->{$sig}++;
+}
+
+sub stop {
+  $stop = 1;
+}

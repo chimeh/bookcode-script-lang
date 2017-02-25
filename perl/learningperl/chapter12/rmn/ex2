@@ -1,0 +1,11 @@
+#! /usr/bin/perl -w
+use 5.014;
+use List::Util qw( reduce );
+
+my $oldest = reduce { -C $a > -C $b ? $a : $b } grep { -e $_ } @ARGV;
+
+exit unless defined $oldest;
+
+my $age = -C $oldest;
+
+say "$oldest is $age days old";

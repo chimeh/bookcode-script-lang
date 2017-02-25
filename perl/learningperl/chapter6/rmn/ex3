@@ -1,0 +1,10 @@
+#! /usr/bin/perl
+
+use 5.014;
+use List::Util qw( max );
+
+my $max_length = max map { length $_ } keys %ENV;
+
+foreach ( sort keys %ENV ) {
+  printf "%${max_length}s : %s\n", $_, $ENV{$_};
+}
